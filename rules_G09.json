@@ -1,0 +1,49 @@
+{
+    "rules": [
+        {
+            "conditions": [
+                {
+                    "feature": "rob_hurst_100",
+                    "op": ">",
+                    "threshold": -0.7726508073919257
+                }
+            ],
+            "action": {
+                "side": "BUY",
+                "tp": 0.0993446268328233,
+                "sl": 0.026119583503777473,
+                "size": 0.3
+            }
+        },
+        {
+            "conditions": [
+                {
+                    "feature": "cand_close_open_ratio_1",
+                    "op": "<",
+                    "threshold": -0.18403289245872612
+                }
+            ],
+            "action": {
+                "side": "SELL",
+                "tp": 0.04010287820646902,
+                "sl": 0.01,
+                "size": 0.20337156976340814
+            }
+        },
+        {
+            "conditions": [
+                {
+                    "feature": "cand_range_1",
+                    "op": ">",
+                    "threshold": -1.103703776837708
+                }
+            ],
+            "action": {
+                "side": "SELL",
+                "tp": 0.08898909669973962,
+                "sl": 0.02882833277180659,
+                "size": 0.3
+            }
+        }
+    ]
+}
