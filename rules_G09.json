@@ -3,46 +3,51 @@
         {
             "conditions": [
                 {
-                    "feature": "rob_hurst_100",
+                    "feature": "vol_var_20",
+                    "op": "<",
+                    "threshold": -0.3492284734697679
+                }
+            ],
+            "action": {
+                "side": "SELL",
+                "tp": 0.04899964457131009,
+                "sl": 0.013000000000000001,
+                "size": 0.18920031561458756
+            }
+        },
+        {
+            "conditions": [
+                {
+                    "feature": "rob_autocorr_20",
+                    "op": "<",
+                    "threshold": 0.38597646762125054
+                },
+                {
+                    "feature": "trend_tema_20",
                     "op": ">",
-                    "threshold": -0.7726508073919257
+                    "threshold": 1.066195923486407
+                }
+            ],
+            "action": {
+                "side": "SELL",
+                "tp": 0.023,
+                "sl": 0.035534100145505704,
+                "size": 0.175
+            }
+        },
+        {
+            "conditions": [
+                {
+                    "feature": "cand_shadow_upper_1",
+                    "op": ">",
+                    "threshold": -0.6516949886165756
                 }
             ],
             "action": {
                 "side": "BUY",
-                "tp": 0.0993446268328233,
-                "sl": 0.026119583503777473,
-                "size": 0.3
-            }
-        },
-        {
-            "conditions": [
-                {
-                    "feature": "cand_close_open_ratio_1",
-                    "op": "<",
-                    "threshold": -0.18403289245872612
-                }
-            ],
-            "action": {
-                "side": "SELL",
-                "tp": 0.04010287820646902,
-                "sl": 0.01,
-                "size": 0.20337156976340814
-            }
-        },
-        {
-            "conditions": [
-                {
-                    "feature": "cand_range_1",
-                    "op": ">",
-                    "threshold": -1.103703776837708
-                }
-            ],
-            "action": {
-                "side": "SELL",
-                "tp": 0.08898909669973962,
-                "sl": 0.02882833277180659,
-                "size": 0.3
+                "tp": 0.023,
+                "sl": 0.0327710753661655,
+                "size": 0.27584095315900625
             }
         }
     ]
