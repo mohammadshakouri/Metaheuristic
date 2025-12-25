@@ -3,51 +3,16 @@
         {
             "conditions": [
                 {
-                    "feature": "vol_var_20",
-                    "op": "<",
-                    "threshold": -0.3492284734697679
-                }
-            ],
-            "action": {
-                "side": "SELL",
-                "tp": 0.04899964457131009,
-                "sl": 0.013000000000000001,
-                "size": 0.18920031561458756
-            }
-        },
-        {
-            "conditions": [
-                {
-                    "feature": "rob_autocorr_20",
-                    "op": "<",
-                    "threshold": 0.38597646762125054
-                },
-                {
-                    "feature": "trend_tema_20",
+                    "feature": "trend_lin_slope_50",
                     "op": ">",
-                    "threshold": 1.066195923486407
-                }
-            ],
-            "action": {
-                "side": "SELL",
-                "tp": 0.023,
-                "sl": 0.035534100145505704,
-                "size": 0.175
-            }
-        },
-        {
-            "conditions": [
-                {
-                    "feature": "cand_shadow_upper_1",
-                    "op": ">",
-                    "threshold": -0.6516949886165756
+                    "threshold": 0.16484819567899886
                 }
             ],
             "action": {
                 "side": "BUY",
-                "tp": 0.023,
-                "sl": 0.0327710753661655,
-                "size": 0.27584095315900625
+                "tp": 0.022,
+                "sl": 0.042,
+                "size": 0.28491287782337704
             }
         }
     ]
