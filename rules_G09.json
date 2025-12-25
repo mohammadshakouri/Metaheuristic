@@ -3,16 +3,26 @@
         {
             "conditions": [
                 {
-                    "feature": "trend_lin_slope_50",
+                    "feature": "cand_candle_dir_1",
+                    "op": "<",
+                    "threshold": 0.9921335217952748
+                },
+                {
+                    "feature": "cand_gap_1",
+                    "op": "<",
+                    "threshold": 1.4113742419378081
+                },
+                {
+                    "feature": "cand_body_sign_5",
                     "op": ">",
-                    "threshold": 0.16484819567899886
+                    "threshold": -0.4843647570754416
                 }
             ],
             "action": {
                 "side": "BUY",
-                "tp": 0.022,
-                "sl": 0.042,
-                "size": 0.28491287782337704
+                "tp": 0.023,
+                "sl": 0.06597671772674628,
+                "size": 0.2870403630598919
             }
         }
     ]
